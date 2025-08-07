@@ -13,6 +13,9 @@ export default defineNuxtConfig({
     build : {
       transpile: ['vue-toastification']
    },
+    nitro: {
+        preset: 'vercel' // <-- required for Vercel deployment!
+    },
    runtimeConfig: {
     public: {
       FIREBASE_API_KEY: process.env.FIREBASE_API_KEY,
